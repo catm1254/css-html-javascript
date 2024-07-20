@@ -1,0 +1,132 @@
+*,::before,::after{
+  box-sizing:border-box;    
+  }
+  
+  
+  
+  
+  
+  
+  :root{
+    --background-body-1:rgb(10, 27, 112);
+    --background-body-2:rgb(5, 17, 74);
+    --font-body-1:rgb(215, 201, 201);
+    --color-input-section:rgb(90, 34, 186);
+    --font-input-section-button:rgb(233, 232, 234);
+    --shadow-division-input:rgb(12, 4, 248);
+    --color-explain:rgb(3, 95, 20);
+    --font-explain:rgb(233, 232, 234);
+  }
+  body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(180deg,var(--background-body-1)50%,var(--background-body-2));
+    color:var(--font-body-1);
+    text-align:center;
+    font-size:10px;
+    
+  }
+  main{
+    width: min(100vw, 450px);
+    min-height:100vh;
+    margin:0 auto;
+    min-width:(500px);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:no-wrap;
+    padding:0;
+    
+  }
+  #logo{
+    
+    width:60%;
+    margin-bottom:10px;
+   
+    
+  }
+  h1{
+    font-size:4.6em;
+    font-weight:600;
+    width:100%;
+  }
+  .division-input{
+    
+    background-color:white;
+    width:100%;
+    border-radius:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    margin:10px 0;
+    box-shadow: 1px 8px 5px var(--shadow-division-input);
+  
+    
+  
+  }
+  .division-input p{
+    font-size:1.1rem;
+    color:black;
+    width:100%;
+   
+    
+  }
+  
+  .input-input-section{
+    width:min(60%,250px);
+    border:none;
+    border-bottom:solid 2px var(--color-input-section);
+    margin-right:10px;
+    font-size:2em;
+    text-align:center;
+  }
+  .button-input-section{
+  background-color:var(--color-input-section);
+  border:none;
+  color:var(--font-input-section-button);
+  font-size:1rem;
+  border-radius:10px;
+  padding:5px 20px;
+  }
+  
+  .hidden{
+    display:none;
+  }
+  .result{
+    color:blacK;
+  }
+  .division-explian{
+    border:solid;
+    background-color:var(--color-explain);
+    color:var(--font-explain);
+    display:flex;
+    font-size:1.3rem;
+    justify-content:center;
+    align-items:top;
+    padding:10px 10px;
+    border-radius:20px;
+    margin:10px 0px;
+   
+  }
+  
+  .division-explian p{
+    vertical-align: middle;
+    margin:0;
+  }
+  .fa-lightbulb{
+    color:yellow;
+  }
+  .result{
+    min-height: 50px;
+    color: black;
+    overflow-y: auto;
+   
+  }
+  .result p{
+  font-size:2rem;
+  }
+  
