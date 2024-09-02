@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="styleSheet" href="styles.css">
+        <title>Pokemon Search app</title>
+    </head>
+    <body>
+        <main>
+            <img class="principal_logo"src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
+            <h1>Pokémon Search App</h1>
+            <div class="principal_container">
+                <section class="search_section">   
+                    <form role="search" id="search-form">
+                        <label for="search-input">Search for Pokémon Name or ID:</label>
+                        <input type="text" name="pokemon" id="search-input" required />
+                        <button type="submit" id="search-button">Search</button>
+                    </form>
+                </section> 
+                <section class="result_section">
+                    <div class="result_general_stats_container">
+                        <div class="name_id">
+                            <span id="pokemon-name">Pikachu</span>
+                            <span id="pokemon-id">25</span>
+                        </div>
+                        <div class="weight_height_container">
+                            <span id="weight">Weight: 60</span>
+                            <span id="height">Height: 4</span>
+                        </div>
+                        <div class="type_container">
+                            <span id="types">Electric</span>
+                        </div>
+                    </div>
+                    <div id="image-container" class="image_container">
+                        <img id="sprite" class="image_principal" src="	https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pikachu">
+                    </div>
+                    <div class="stats_container">
+                        <table>
+                            <tr>
+                                <th>Base</th>
+                                <th>Stats</th>
+                            </tr>
+                            <tr>
+                                <td>HP:</td>
+                                <td id="hp">25</td>
+                            </tr>
+                            <tr>
+                                <td>Attack:</td>
+                                <td id="attack">55</td>
+                            </tr>
+                            <tr>
+                                <td>Defense:</td>
+                                <td id="defense">40</td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Attack:</td>
+                                <td id="special-attack">50</td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Defense:</td>
+                                <td id="special-defense">50</td>
+                            </tr>
+                            <tr>
+                                <td>Speed:</td>
+                                <td id="speed">90</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </section>
+            
+            
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

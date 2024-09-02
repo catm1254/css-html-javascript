@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link rel="styleSheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <img class="logo-principal"src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
+            <h1>Cash Register Project</h1>
+            <div id="change-due"></div>
+            <div class="input-div">
+                <label for="cash">Enter cash from customer</label>
+                <input type="number" id="cash" class="number_input" value="">
+                <button class="button_input" id="purchase-btn">Purchase</button>
+            </div>
+            <div class="container_register">
+                <div class="screen_base">
+                    <div class="screen" id="screen-register">Total $3.26</div>
+                </div>
+                <div class="conector_screen"></div>
+                <div class="register_body">
+                    <div class="button_matrix">
+                        <button class="btn_register" id="btn-register-1">1</button>
+                        <button class="btn_register" id="btn-register-2">2</button>
+                        <button class="btn_register" id="btn-register-3">3</button>
+                        <button class="btn_register" id="btn-register-4">4</button>
+                        <button class="btn_register" id="btn-register-5">5</button>
+                        <button class="btn_register" id="btn-register-6">6</button>
+                        <button class="btn_register" id="btn-register-7">7</button>
+                        <button class="btn_register" id="btn-register-8">8</button>
+                        <button class="btn_register" id="btn-register-9">9</button>
+                    </div>
+                    <div id="display-screen-change" class="display_screen_change">
+                    </div>
+                </div>
+                <div class="register_foot">
+                    <div class="register_key"></div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
