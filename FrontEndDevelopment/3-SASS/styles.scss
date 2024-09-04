@@ -1,0 +1,101 @@
+//import file  a extern scss
+@import 'stylesimport';
+
+// variable of SASS
+$text-color:red;
+
+// function of SASS with default parameters as default and internal parameter will traduce to css application of properties in packs
+@mixin shape($w,$h,$bg-color){
+  height:$h;
+  width:$w;
+  background-color:$bg-color;
+  border:solid black 2px;
+}
+// we can add if parameters to Sass to take decision based on the input parameters.
+@mixin border-stroke ($val){
+  @if $val ==light{
+    border: 1px solid black;
+  }@else if $val==medium{
+    border: 3px solid black;
+  }@else if $val==heavy{
+    border: 6px solid black;
+  }@else{
+    border: none;
+  }
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  @include border-stroke(heavy);
+}
+// two ways: start through end, start to end difference start through end exclude the end number and start to end include all the numbers
+//@for $var from start to end {}
+// the part #{i} is used to substitute the iteration variable to convert the variable to string
+@for $i from 1 through 6 {
+  .text-#{$i} {font-size:15px* $i;}
+}
+
+// use of Each in maps or item list, each iteration the variable is assigned to the current value from the list or map
+// syntax to create the map of elements
+$colors: (color1: blue, color2: black, color3: red);
+//as is a map we need two variables key for the keys and color for the color, we need two if only provide one will iterate only on the keys
+@each $key, $color in $colors {
+  .#{$color}-bg {background-color: $color;
+    height:200px;
+    width:200px;}
+}
+
+// while directive , we need to define a variable and also define the break up of the cycle take care of t he increase in variables outside the .carlos class
+$x:1;
+@while $x<13{
+  .carlos-#{$x}{
+    font-size:15px*$x;
+  }
+  $x:$x+1;
+}
+//use of extend to create new properties including other properties prev declared
+.info{
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.info-important{
+  @extend .info;
+  background-color: green
+}
+
+
+
+
+
+.header{
+    text-align: center;
+  }
+  .blog-post, h2 {
+    color: $text-color;
+  }
+// we can add the css property in cascade with the encapsulation in parenthesis
+  .blog-post-2 {
+    h1 {
+      text-align: center;
+      color: blue;
+    }
+    p {
+      font-size: 20px;
+    }
+    } 
+//we can call the functions with different parameters.
+    #square {
+      @include shape(50px,50px,red);
+    }
+    
+    #rect-a {
+      @include shape(100px,50px,blue);
+    }
+    
+    #rect-b {
+      
+      @include shape(50px,100px,orange);
+    }

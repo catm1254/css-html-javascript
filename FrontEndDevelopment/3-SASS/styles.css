@@ -1,0 +1,148 @@
+.importedSCSS {
+  color: red;
+  font-size: 30px;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border: 6px solid black;
+}
+
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.text-6 {
+  font-size: 90px;
+}
+
+.blue-bg {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+.black-bg {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+}
+
+.red-bg {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.carlos-1 {
+  font-size: 15px;
+}
+
+.carlos-2 {
+  font-size: 30px;
+}
+
+.carlos-3 {
+  font-size: 45px;
+}
+
+.carlos-4 {
+  font-size: 60px;
+}
+
+.carlos-5 {
+  font-size: 75px;
+}
+
+.carlos-6 {
+  font-size: 90px;
+}
+
+.carlos-7 {
+  font-size: 105px;
+}
+
+.carlos-8 {
+  font-size: 120px;
+}
+
+.carlos-9 {
+  font-size: 135px;
+}
+
+.carlos-10 {
+  font-size: 150px;
+}
+
+.carlos-11 {
+  font-size: 165px;
+}
+
+.carlos-12 {
+  font-size: 180px;
+}
+
+.info, .info-important {
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.info-important {
+  background-color: green;
+}
+
+.header {
+  text-align: center;
+}
+
+.blog-post, h2 {
+  color: red;
+}
+
+.blog-post-2 h1 {
+  text-align: center;
+  color: blue;
+}
+.blog-post-2 p {
+  font-size: 20px;
+}
+
+#square {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border: solid black 2px;
+}
+
+#rect-a {
+  height: 50px;
+  width: 100px;
+  background-color: blue;
+  border: solid black 2px;
+}
+
+#rect-b {
+  height: 100px;
+  width: 50px;
+  background-color: orange;
+  border: solid black 2px;
+}/*# sourceMappingURL=styles.css.map */
